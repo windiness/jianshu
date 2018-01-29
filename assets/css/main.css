@@ -1,3 +1,4 @@
+/*公共样式***********************/
 *{
     box-sizing: border-box;
 }
@@ -34,6 +35,12 @@ ul,ol,dl{
     margin: 0!important;
     padding: 0;
 }
+.my-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
 @media (min-width: 992px){
     .my-container{
         width: 960px;
@@ -44,3 +51,177 @@ ul,ol,dl{
         width: 750px;
     }
 }
+/*************************************/
+/*首页布局*/
+.index{
+    margin-top: 30px;
+}
+.index .main{
+    height: 1500px;
+    padding-right: 0;
+}
+.index .aside{
+    height: 1500px;
+    padding: 0 0 0 4.16667%;
+}
+.index .main .banner img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 4px;
+}
+.index .main .banner {
+    margin-bottom: 35px;
+}
+.index .main .recommend-collection {
+    margin-bottom: 10px;
+}
+.index .main .recommend-collection a {
+    display: inline-block;
+    min-height: 34px;
+    margin: 0 18px 18px 0;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.index .main .recommend-collection .more-hot-collection {
+    display: inline-block;
+    line-height: 34px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    color: #787878;
+    vertical-align: center;
+}
+.index .main .recommend-collection a img {
+    width: 32px;
+    height: 32px;
+    vertical-align: bottom;
+}
+.index .main .recommend-collection a span {
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 32px;
+}
+.index .main .split-line {
+    margin: 0px 0 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.index .aside .board img{
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+.note-list {
+    border:0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.note-list li {
+    position: relative;
+    width: 100%;
+    padding: 0 0 17px 0;
+    margin: 0 0 17px 0;
+    border-bottom: 1px solid #ccc;
+    word-wrap: break-word;
+}
+.note-list li.have-img>a{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -60px;
+    width: 150px;
+    height: 120px;
+}
+.note-list li.have-img>.wrap-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+}
+.note-list li.have-img .content {
+    padding-right: 160px;
+}
+.note-list .author {
+    margin-bottom: 14px;
+    font-size: 13px;
+}
+.note-list .author .avatar , .note-list .author .info {
+    display: inline-block;
+    vertical-align: middle;
+}
+.avatar {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.note-list .author .avatar {
+    margin: 0 5px 0 0;
+}
+.note-list .author .info .time {
+    color: #969696;
+    padding-left: 5px;
+}
+.note-list .tittle {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.note-list .title:visited {
+    color: #969696;
+}
+.note-list .abstract {
+    font-size: 13px;
+    margin: 0 0 13px 0;
+    line-height: 24px;
+}
+.note-list .meta {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.note-list .meta .collection-tag {
+    color: #ea6f5a!important;
+    border: 1px solid #ea6f5a;
+    border-radius: 3px;
+    padding: 3px 6px;
+    margin-right: 10px;
+    transition: all ease-in .5s;
+}
+.note-list .meta .collection-tag:hover {
+    background-color: rgb(254,247,247);
+    border: 1px solid rgb(236,97,73);
+}
+.note-list .meta .tag {
+    margin-right: 10px;
+    color: #b4b4b4!important;
+    transition: all ease-in .3s;
+}
+.note-list .meta .tag:hover {
+    color: rgb(120,120,120) !important;
+}
+.note-list .meta span {
+    color: #b4b4b4!important;
+}
+@media (max-width: 1080px) {
+    .note-list li.have-img .wrap-img {
+        margin-top: -58px;
+        bottom: 40px;
+        width: 125px;
+        height: 100px;
+    }
+    .note-list li.have-img>div {
+        padding-right: 135px;
+    }
+}
+/*文章页面*/
+/*用户页面*/
