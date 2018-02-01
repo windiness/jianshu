@@ -2,6 +2,13 @@
 *{
     box-sizing: border-box;
 }
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
 html,body{
     height: 100%;
     background-color: #fff;
@@ -190,6 +197,12 @@ ul,ol,dl{
     font-weight: 400;
 }
 .note-list .meta .collection-tag {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     color: #ea6f5a!important;
     border: 1px solid #ea6f5a;
     border-radius: 3px;
@@ -223,5 +236,371 @@ ul,ol,dl{
         padding-right: 135px;
     }
 }
+.index .main .load-more {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff!important;
+    background: #a5a5a5;
+    border-radius: 20px;
+    margin: 30px auto 60px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+.aside .board {
+    margin-bottom: 4px;
+}
+footer {
+    margin-bottom: 20px;
+}
+footer .row {
+    padding-top: 25px;
+}
+.recommend-author {
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+.recommend-author .tittle {
+    text-align: left;
+}
+.recommend-author .tittle .page-change {
+    float: right;
+}
+.recommend-author .tittle .page-change i {
+    transition: ease .2s;
+}
+.recommend-author .list {
+    margin-top: 20px;
+    text-align: left;
+}
+.recommend-author .list li {
+    margin-top: 15px;
+}
+.recommend-author .list li .avatar {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+.recommend-author .list li .follow {
+    margin-top: 5px;
+    float: right;
+    font-size: 13px;
+    color: #42c02e!important;
+}
+.recommend-author .list li .name {
+    display: block;
+    padding-top: 5px;
+    margin-right: 60px;
+    font-size: 14px;
+}
+.recommend-author .list li p {
+    color: #969696;
+    font-size: 12px;
+}
+.recommend-author .find-more {
+    display: block;
+    width: 100%;
+    padding: 7px 7px 7px 12px;
+    color: #787878!important;
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.recommend-author .find-more i {
+    font-size: 14px;
+}
+.aside .download {
+    display: block;
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+.aside .download img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+.aside .download .code-info {
+    display: inline-block;
+    margin-left: 7px;
+    vertical-align: middle;
+}
+.aside .download .code-info i {
+    font-size: 18px;
+}
+.aside .download .code-info .tittle {
+    font-size: 15px;
+    color: #333;
+}
+.aside .download .code-info .description {
+    font-size: 13px;
+    color: #999;
+}
+
+
 /*文章页面*/
+.note{
+    position: relative;
+    padding-top: 10px;
+}
+.note .post{
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.note .post .article .title{
+    font-size: 34px;
+    font-weight: 700;
+    margin: 20px 0 0;
+    word-break: break-all;
+}
+.note .post .article .author{
+    margin: 30px 0 40px 0;
+}
+.note .post .article .author .avatar{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.note .post .article .author .info{
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+.note .post .article .author .info .name{
+    font-size: 16px;
+    margin-right: 5px;
+}
+.note .post .article .author .info .follow{
+    color: #fff!important;
+    background-color: #42c02e;
+    border-radius: 20px;
+    padding: 0 7px 0 7px;
+    border: 1px solid hsla(0,0%,59%,.6);
+}
+.note .post .article .author .info .follows{
+    color: #bbb!important;
+    background-color: #fff;
+}
+.note .post .article .author .meta{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #969696;
+}
+.note .post .article .author .meta span{
+    margin-right: 5px;
+}
+
+.note .post .article .show-content {
+    font-size: 16px;
+    font-weight: 400;
+    word-break: break-all;
+    line-height: 1.7;
+    color: #2f2f2f;
+}
+.note .post .article .show-content p {
+    margin: 0 0 20px;
+}
+.note .post .article .show-footer {
+    margin-bottom: 30px;
+}
+.note .post .article .show-footer .notebook {
+    font-size: 12px;
+    color: #c8c8c8!important;
+}
+.note .post .article .show-footer .notebook i {
+    margin-right: 5px;
+}
+.note .post .article .show-footer .copyright {
+    float: right;
+    font-size: 12px;
+    color: #c8c8c8;
+}
+.note .post .article .follow-detail {
+    padding: 20px;
+    background: #f8f8f8;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+}
+.note .post .article .follow-detail .avatar {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 10px;
+}
+
+.note .post .article .follow-detail .info .btn {
+    float: right;
+    border-radius: 20px;
+}
+.note .post .article .follow-detail .title {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-right: 5px;
+}
+.note .post .article .follow-detail .info>i {
+    color: #3194f0;
+    font-size: 15px;
+}
+.note .post .article .follow-detail .info p {
+    color: #969696;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+.note .post .article .follow-detail .signature {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #969696;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+}
+.note .post .article .meta-bottom {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.note .post .article .meta-bottom .like {
+    display: inline-block;
+}
+.note .post .article .meta-bottom .share-group {
+    float: right;
+}
+.note .post .article .meta-bottom .like-group {
+    border:1px solid #ea6f5a;
+    padding: 13px 0 15px;
+    border-radius: 40px;
+}
+.note .post .article .meta-bottom .like .active {
+    background: #ea6f5a;
+}
+.note .post .article .meta-bottom .like .color-a {
+    background: #ea6f5a!important;
+}
+.note .post .article .meta-bottom .like .color-b {
+    background: white;
+}
+.note .post .article .meta-bottom .like .color-c {
+    color: white!important;
+}
+.note .post .article .meta-bottom .like .color-d {
+    color: white!important;
+    border-left: 1px solid white!important;
+}
+.note .post .article .meta-bottom .like-group:hover {
+    background: rgb(254,247,245);
+}
+.note .post .article .meta-bottom .like-group .btn-like {
+    font-size: 19px;
+    display: inline-block;
+    color: #ea6f5a;
+}
+.note .post .article .meta-bottom .like-group .btn-like a {
+    padding: 18px 15px 18px 30px;
+}
+.note .post .article .meta-bottom .like-group .modal-wrap {
+    font-size: 18px;
+    display: inline-block;
+    border-left: 1px solid rgba(236,97,73,.4);
+    color: #ea6f5a;
+}
+.note .post .article .meta-bottom .like-group .modal-wrap a {
+    padding: 18px 30px 18px 17px;
+}
+.note .post .article .meta-bottom .share-group {
+
+}
+.note .post .article .meta-bottom .share-group a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    background: #fff;
+    margin-left: 5px;
+    line-height: 50px;
+}
+/*.note .post .article .meta-bottom .share-group a:hover {*/
+    /*background: #dcdcdc;*/
+/*}*/
+.note .post .article .meta-bottom .share-group a i {
+    font-size: 25px;
+}
+.weibo {
+    color: red;
+}
+.weixin {
+    color: green;
+}
+.qq {
+    color: #3194f0;
+}
+.note .post .article .meta-bottom .share-group .more-share {
+    width: auto;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 4px 18px;
+    border-radius: 20px;
+    color: #969696!important;
+    position: relative;
+}
+.note .post .article .meta-bottom .share-group .more-share .share-list {
+    width: 150px;
+    display: block;
+    /*padding: 10px 10px 10px 0px;*/
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #c8c8c8;
+    left: -30px;
+    position: absolute;
+    bottom: 65px;
+    background: #fff;
+}
+.note .post .article .meta-bottom .share-group .more-share .share-list:before {
+    content: "";
+    position: absolute;
+    top: 160px;
+    right: 70px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+}
+.note .post .article .meta-bottom .share-group .more-share .share-list li i {
+    margin-right: 5px;
+}
+.note .post .article .meta-bottom .share-group .share-list li:hover {
+    background: #dcdcdc;
+}
+.list-qq {
+    font-size: 18px!important;
+    color: #e3b81f;
+    margin-left: -10px;
+}
+.list-twitter {
+    margin-left: -15px;
+    font-size: 20px!important;
+    color: #3194f0;
+}
+.list-facebook {
+    font-size: 20px!important;
+    color: mediumblue;
+}
+.list-google {
+    font-size: 14px!important;
+    margin-left: -10px;
+    color: red;
+}
 /*用户页面*/
